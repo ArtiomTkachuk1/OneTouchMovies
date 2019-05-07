@@ -1,0 +1,10 @@
+body{
+	background-color:black;
+	color:red;
+}
+.titlediv{
+	width:100%;
+	color:red;
+	font-size:400%;
+	text-align:center;
+}
