@@ -1,4 +1,3 @@
-cd "C:\Учёба\8 семестр\Диплом\onetouchsearch"
 set FLASK_APP=server.py
 set FLASK_ENV=development
 flask run

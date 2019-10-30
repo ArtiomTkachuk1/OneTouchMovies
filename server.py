@@ -290,7 +290,7 @@ def upload_file():
 			return redirect(request.url)
 		if file and allowed_file(file.filename):
 			filename = secure_filename(file.filename)
-			file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+			file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))#filename+timepstamp+rnd - правильно
 			return redirect(url_for('results'))
 	return '''
 	<!doctype html>
@@ -323,9 +323,3 @@ from flask import send_from_directory
 #@app.route('/ratings/<filename>')
 #def uploaded_file(filename):
 	#return send_from_directory(app.config['UPLOAD_FOLDER'],filename)
-
-
-#TO_DO
-#0.Найти не битый movies.csv
-#1.Переверстать
-#2.Подумать, что делать, когда несколько файлов отправляются одновременно
